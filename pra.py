@@ -1,3 +1,4 @@
+# 거꾸로 해도 똑같은 문자열 구하기
 a = []
 def solution(s):
     for i in range(len(s)):
@@ -11,3 +12,14 @@ def solution(s):
         return -1
 
 print(solution(input()))
+
+'''
+def solution(s):
+    for i in range(len(s)//2):
+        j = len(s) - 1 - i 
+        if s[i] != s[j]:
+            return -1
+    return 1 
+
+print(solution(input()))
+'''
